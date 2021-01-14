@@ -1,0 +1,15 @@
+.header{
+  height:75px;
+
+}
+.header-colored{
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+.header-transparent{
+  color:rgba(255, 255, 255, 0.884);
+  text-shadow: 1px 1px 3px black;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.329);
+}
+
+
+

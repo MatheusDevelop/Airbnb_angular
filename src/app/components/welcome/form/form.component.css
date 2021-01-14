@@ -1,0 +1,38 @@
+.form-welcome{
+  width:400px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.356);
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 15px;
+  height:500px;
+  margin-right:150px;
+}
+.form-welcome input{
+  width: 100%;
+}
+.form-welcome-button{
+  cursor: pointer;
+  height:50px;
+  width:200px;
+  color: white;
+  background-color: var(--color-3);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.37);
+}
+.form-welcome-input input,.form-welcome span{
+  border:0px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.349);
+  border-bottom: 3px solid;
+  border-bottom-color: var(--color-3);
+}
+input:focus{
+  outline: none;
+}
+.form-welcome-input{
+  position: relative;
+}
+.search-box{
+  background-color: rgba(255, 255, 255, 0.849);
+  width:100%;
+  padding:8px;
+  box-shadow: 3px 3px 10px rgba(80, 79, 79, 0.158);
+}

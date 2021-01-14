@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --color-white:white;
+  --color-body:rgb(243, 242, 242);
+  --color-1:#00171F;
+  --color-2:#003459;
+  --color-3:#007EA7;
+  --color-4:#00A8E8;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--color-body);
+}
+
+.neumo-shadow-lg{
+  box-shadow: 3px 3px 6px rgba(61, 60, 60, 0.233), -3px -3px 6px white;
+}
+
+.font-size-sm{
+  font-size: 1em;
+}
+.font-size-sm-lg{
+  font-size: 1.5em;
+}
+.font-size-md{
+  font-size: 2.25em;
+}
+.font-size-md-lg{
+  font-size: 3.375em;
+}
+.font-size-lg{
+  font-size: 5.063em;
+}
+
+.leftside-welcome-width{
+  width:350px;
+}
+

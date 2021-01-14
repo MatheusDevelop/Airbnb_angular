@@ -1,0 +1,40 @@
+<div class="form-welcome text-dark pt-5">
+  <div class="form-welcome-input pl-3 m-3">
+    <label class="font-weight-bold">Para onde voce quer ir?</label>
+    <div class="d-flex flex-column justify-content-center">
+      <div class="d-flex">
+        <input
+          type="text"
+          [value]="AdressCityForSearch"
+          (input)="searchingAdress($event.target.value)"
+        />
+        <span class="material-icons"> location_on </span>
+      </div>
+      <div class="search-box" *ngIf="AdressCitySearchedView.length > 1">
+        {{ AdressCitySearchedView }}
+      </div>
+    </div>
+  </div>
+  <div class="form-welcome-input pl-3 m-3">
+    <label class="font-weight-bold">Check-in</label>
+    <div class="d-flex align-items-center">
+      <input type="date" (input)="Checkin = $event.target.value" />
+    </div>
+  </div>
+  <div class="form-welcome-input pl-3 m-3">
+    <label class="font-weight-bold">Check-out</label>
+    <div class="d-flex align-items-center">
+      <input type="date" (input)="Checkout = $event.target.value" />
+    </div>
+  </div>
+  <div class="pl-3 m-3">
+    <div
+      class="form-welcome-button d-flex align-items-center justify-content-around"
+    >
+      <div>Pesquisar</div>
+      <div class="d-flex align-items-center">
+        <div class="material-icons">arrow_right_alt</div>
+      </div>
+    </div>
+  </div>
+</div>

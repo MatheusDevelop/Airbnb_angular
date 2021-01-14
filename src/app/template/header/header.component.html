@@ -1,0 +1,48 @@
+<header
+  *ngIf="!isTransparentHeader"
+  class="header header-colored bg-white d-flex align-items-center justify-content-start margin-lg px-lg-3 px-sm-1 fixed-top"
+>
+  <div
+    class="pl-3 d-flex justify-content-between leftside-welcome-width font-size-sm-lg font-weight-bold"
+  >
+    <div>Logo</div>
+  </div>
+  <div class="divider-header">
+    <div></div>
+  </div>
+
+  <nav class="col-lg-6 header-nav d-flex">
+    <div *ngFor="let item of menu" class="mx-3 font-size-sm">
+      {{ item.name }}
+    </div>
+  </nav>
+  <div class="divider-header">
+    <div></div>
+  </div>
+  <nav class="header-nav-icons">
+    <div>icon</div>
+  </nav>
+</header>
+<!-- Transparent header -->
+<header
+  *ngIf="isTransparentHeader"
+  class="header header-transparent d-flex align-items-center justify-content-start margin-lg pr-lg-3 pr-sm-1 fixed-top"
+>
+  <div
+    class="pl-3 d-flex justify-content-between leftside-welcome-width font-size-sm-lg font-weight-bold"
+  >
+    <div>StudyProject</div>
+  </div>
+  <nav class="col-lg-6 header-nav d-flex">
+    <div *ngFor="let item of menu" class="mx-3 font-size-sm">
+      {{ item.name }}
+    </div>
+  </nav>
+  <nav
+    class="header-nav-icons d-flex flex-align-center justify-content-end"
+  >
+    <span class="material-icons mx-3"> search </span>
+    <span class="material-icons mx-3"> person </span>
+    <span class="material-icons mx-3"> menu </span>
+  </nav>
+</header>

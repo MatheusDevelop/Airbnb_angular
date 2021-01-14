@@ -1,0 +1,25 @@
+.welcome{
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.welcome-box{
+  z-index: 3;
+}
+.welcome-leftside{
+  height:100vh;
+  background-color: rgba(255, 255, 255, 0.089);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.151);
+  backdrop-filter: blur(10px);
+}
+.welcome-title{
+  margin-right: -550px;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 125px;
+  text-shadow: 3px 3px 6px #0000002f;
+}
+
